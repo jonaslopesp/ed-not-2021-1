@@ -27,7 +27,7 @@ import {candidatos} from '../includes/candidatos-2018.mjs'
 
 console.log('Antes:', candidatos)
 console.time('Ordenando candidatos...')
-bubbleSort(candidatos, (obj1, obj2) => obj1.NM_URNA_CANDIDATO > obj1.NM_URNA_CANDIDATO)
+bubbleSort(candidatos, (obj1, obj2) => obj1.NM_URNA_CANDIDATO > obj2.NM_URNA_CANDIDATO)
 console.timeEnd('Ordenando candidatos')
 console.log('Depois:', candidatos)
 console.log({totTrocas, pass, comps})
